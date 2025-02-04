@@ -80,7 +80,7 @@ footer {
   width: calc(75% - 40px);
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  /* align-content: space-between; */
 }
 .indiSection {
   width: calc(25% - 10px);
@@ -96,7 +96,7 @@ footer {
   font-weight: 400;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, cyan, blue, yellow) 1;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 .indiSection > p {
   color: rgba(255, 255, 255, 0.736);
