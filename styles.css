@@ -38,6 +38,7 @@ footer {
   /* logo container styling */
   height: 30px;
   width: 30px;
+  cursor: pointer;
   margin: 0px 20px;
 }
 .logos img {
@@ -99,6 +100,7 @@ footer {
   /* every individual section maintaining 25% owidth of subSection21 */
   margin-right: 10px;
   padding-top: 5px;
+  padding-right: 10px;
 }
 .indiSection > h2 {
   /* individual section heading styling */
@@ -118,8 +120,30 @@ footer {
   color: rgba(255, 255, 255, 0.736);
   font-size: 18px;
   margin-bottom: 15px;
-  padding-right: 10px;
+  width: fit-content;
+  /* padding-right: 10px; */
+  cursor: pointer;
+  position: relative;
 }
+.indiSection > p::after {
+  /* displayes a line with gradient and initially width 0 after the p tag element */
+  content: "";
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, cyan, blue, yellow);
+  height: 2px;
+  width: 0;
+  position: absolute;
+
+  /* transition: width ease-in-out 0.5s; */
+}
+.indiSection > p:hover::after {
+  /* on hover width becomes 100% with transition effect */
+  transition: width ease-in-out 0.35s;
+  width: 100%;
+}
+
 .lower {
   height: 100px;
   border-top: 1px solid #ffffff70;
@@ -135,7 +159,12 @@ footer {
   color: #ffffff90;
   font-size: 18px;
   margin-right: 20px;
+  cursor: pointer;
 }
+.lowerLeft > p:hover {
+  text-decoration: underline;
+}
+
 .lowerRight {
   margin: auto 0px;
 }
