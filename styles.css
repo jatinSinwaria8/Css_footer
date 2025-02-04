@@ -1,3 +1,4 @@
+/* universal selector for defaulting margins and paddings to 0 and box-sizing to border-box fontsize 0 and font family roboto */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +6,11 @@
   font-size: 0;
   font-family: roboto;
 }
+/* a common padding class for left right padding from the window edges */
 .padd {
   padding: 0px 80px;
 }
+/* main footer container styling */
 footer {
   height: 650px;
   background-color: #1f1f1f;
@@ -16,22 +19,25 @@ footer {
 }
 .section1 {
   display: flex;
+  /* section 1 height 150 px it contains follow us and social media links */
   height: 150px;
   padding: 25px auto;
   width: 100%;
   align-items: center;
+  /* justify-content: flex-end  for shifting everything to right */
   justify-content: flex-end;
 }
 .section1 > h4 {
+  /* Follow Us Styling */
   color: white;
   font-weight: 400;
   margin: 0px 10px;
   font-size: 25px;
 }
 .logos {
+  /* logo container styling */
   height: 30px;
   width: 30px;
-  /* background-color: white; */
   margin: 0px 20px;
 }
 .logos img {
@@ -39,13 +45,14 @@ footer {
   height: 100%;
 }
 .section2 {
+  /* section2 styling it contains the rest of design with upper and lower subsection */
   background-color: #151515;
   height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between to seperate upper and lower section with extra space */
   justify-content: space-between;
-
   padding-top: 30px;
 }
 .upper {
@@ -53,7 +60,9 @@ footer {
   height: 350px;
 }
 .corporate {
+  /* corparate section with contact us information */
   width: 25%;
+  /* width 25% of section2 */
   height: 250px;
   padding-right: 40px;
   margin-right: 40px;
@@ -61,6 +70,7 @@ footer {
   padding-top: 5px;
 }
 .corporate > h2 {
+  /* corparate heading styling */
   width: fit-content;
   color: white;
   font-size: 20px;
@@ -72,22 +82,26 @@ footer {
   padding-bottom: 10px;
 }
 .corporate > p {
+  /* corparate contents styling */
   color: #939393;
   font-size: 20px;
   margin-bottom: 5px;
 }
 .subSection21 {
+  /* subsection21 is 75% of the upper section */
   width: calc(75% - 40px);
   display: flex;
   flex-wrap: wrap;
-  /* align-content: space-between; */
+  /* wrap to wrap extra content to bottom */
 }
 .indiSection {
   width: calc(25% - 10px);
+  /* every individual section maintaining 25% owidth of subSection21 */
   margin-right: 10px;
   padding-top: 5px;
 }
 .indiSection > h2 {
+  /* individual section heading styling */
   width: fit-content;
   color: white;
   font-size: 18px;
@@ -95,10 +109,12 @@ footer {
   text-transform: uppercase;
   font-weight: 400;
   border-bottom: 2px solid;
+  /* border image use to apply linear gradient on border */
   border-image: linear-gradient(to right, cyan, blue, yellow) 1;
   padding-bottom: 10px;
 }
 .indiSection > p {
+  /* individual section content styling */
   color: rgba(255, 255, 255, 0.736);
   font-size: 18px;
   margin-bottom: 15px;
@@ -108,6 +124,7 @@ footer {
   height: 100px;
   border-top: 1px solid #ffffff70;
   display: flex;
+  /* justify-content: space-between use to have space between lower right and lower left containers */
   justify-content: space-between;
 }
 .lowerLeft {
@@ -122,6 +139,7 @@ footer {
 .lowerRight {
   margin: auto 0px;
 }
+/* copyright styling */
 .lowerRight > p {
   color: white;
   font-size: 22px;
