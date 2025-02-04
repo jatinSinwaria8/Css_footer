@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0;
+  font-family: roboto;
+}
+.padd {
+  padding: 0px 80px;
+}
+footer {
+  height: 650px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+}
+.section1 {
+  display: flex;
+  height: 150px;
+  padding: 25px auto;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.section1 > h4 {
+  color: white;
+  font-weight: 400;
+  margin: 0px 10px;
+  font-size: 25px;
+}
+.logos {
+  height: 30px;
+  width: 30px;
+  /* background-color: white; */
+  margin: 0px 20px;
+}
+.logos img {
+  object-fit: contain;
+  height: 100%;
+}
+.section2 {
+  background-color: #151515;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-top: 30px;
+}
+.upper {
+  display: flex;
+  height: 350px;
+}
+.corporate {
+  width: 25%;
+  height: 250px;
+  padding-right: 40px;
+  margin-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.242);
+  padding-top: 5px;
+}
+.corporate > h2 {
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, cyan, blue, yellow) 1;
+  padding-bottom: 10px;
+}
+.corporate > p {
+  color: #939393;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.subSection21 {
+  width: calc(75% - 40px);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.indiSection {
+  width: calc(25% - 10px);
+  margin-right: 10px;
+  padding-top: 5px;
+}
+.indiSection > h2 {
+  width: fit-content;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, cyan, blue, yellow) 1;
+  padding-bottom:10px;
+}
+.indiSection > p {
+  color: rgba(255, 255, 255, 0.736);
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+.lower {
+  height: 100px;
+  border-top: 1px solid #ffffff70;
+  display: flex;
+  justify-content: space-between;
+}
+.lowerLeft {
+  margin: auto 0px;
+  display: flex;
+}
+.lowerLeft > p {
+  color: #ffffff90;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.lowerRight {
+  margin: auto 0px;
+}
+.lowerRight > p {
+  color: white;
+  font-size: 22px;
+}
