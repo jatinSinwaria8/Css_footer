@@ -6,19 +6,16 @@
   font-size: 0;
   font-family: roboto;
 }
-/* a common padding class for left right container from the window edges */
 
 /* main footer container styling */
 footer {
-  /* height: 650px; */
   background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
 }
 .footerUpper {
   display: flex;
-  /* section 1 height 150 px it contains follow us and social media links */
-
+  /* top bottom padding for follow us section on footer */
   padding: 50px 0;
   width: 100%;
   align-items: center;
@@ -33,6 +30,7 @@ footer {
   font-size: 25px;
 }
 .allLogos {
+  /* a div containing all logos */
   display: flex;
   align-items: center;
 }
@@ -49,22 +47,20 @@ footer {
 }
 .section2 {
   background-color: #151515;
+  /* section2 styling it contains the rest of design with upper and lower subsection */
+  /* lower section of footer with corporate and other information */
 }
 .footerLower {
-  /* section2 styling it contains the rest of design with upper and lower subsection */
-  /* height: 500px; */
+  /* lower section of footer with corporate and other information */
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between to seperate upper and lower section with extra space */
-  /* justify-content: space-between; */
   padding-top: 30px;
 }
 
 .upper {
   display: flex;
-  /* height: 350px; */
-  /* margin-bottom: 40px; */
+  /* upper section of footerLower with corporate and other information */
 }
 
 .corporate {
@@ -104,7 +100,7 @@ footer {
 }
 .indiSection {
   width: calc(25% - 20px);
-  /* every individual section maintaining 25% owidth of subSection21 */
+  /* every individual section maintaining 25% of width of subSection21 */
   margin-right: 20px;
   padding-top: 5px;
   display: flex;
@@ -113,6 +109,7 @@ footer {
 .indiSection > h2 {
   /* individual section heading styling */
   width: fit-content;
+  /* fit content width for underline to follow the text width */
   color: white;
   font-size: 18px;
   margin-bottom: 40px;
@@ -127,10 +124,12 @@ footer {
 .indiSection > p {
   /* individual section content styling */
   position: relative;
+  /* position relative for absoluting the position of the underline */
   color: rgba(255, 255, 255, 0.736);
   font-size: 18px;
   margin-bottom: 15px;
   width: fit-content;
+  /* fit content width for underline to follow the text width */
   cursor: pointer;
   display: inline-block;
 }
@@ -139,11 +138,12 @@ footer {
   position: absolute;
   content: "";
   display: inline-block;
-
   left: 0;
   bottom: 0;
+  /* left 0 bottom 0 to position it at bottom left of p tag */
   background: linear-gradient(to right, cyan, blue, yellow);
   height: 2px;
+  /* height of underline */
   width: 0;
 }
 .indiSection > p:hover::after {
@@ -151,9 +151,7 @@ footer {
   transition: width ease-in-out 0.35s;
   width: 100%;
 }
-
 .lower {
-  /* height: 100px; */
   padding: 35px 0;
   border-top: 1px solid #ffffff70;
   display: flex;
@@ -161,10 +159,12 @@ footer {
   justify-content: space-between;
 }
 .lowerLeft {
+  /* auto margin from top and bottom to center it verticaly */
   margin: auto 0px;
   display: flex;
 }
 .lowerLeft > p {
+  /* styling of lower left footer links */
   color: #ffffff90;
   font-size: 18px;
   margin-right: 20px;
@@ -177,19 +177,19 @@ footer {
 .lowerRight {
   margin: auto 0px;
 }
-/* copyright styling */
 .lowerRight > p {
+  /* copyright styling */
   color: white;
   font-size: 22px;
 }
-
+/* Screen size max */
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
     margin: 0 auto;
   }
 }
-
+/* screen size from 1200 px to 1399px */
 @media (max-width: 1399px) {
   .container {
     max-width: 1200px;
@@ -197,22 +197,26 @@ footer {
   }
 }
 
+/* screen size from 992 px to 1199px */
 @media (max-width: 1199px) {
   .container {
     max-width: 992px;
     margin: 0 auto;
   }
 }
+/* screen size from 768 px to 991px */
 @media (max-width: 991px) {
   .container {
     max-width: 768px;
     margin: 0 auto;
   }
+
   .corporate {
     height: 350px;
     display: flex;
     flex-direction: column;
   }
+  /* Adjusting sizes in corporate section and individual section */
   .corporate > h2 {
     font-size: 18px;
   }
@@ -224,15 +228,18 @@ footer {
   }
 }
 
+/* screen size from 576 px to 767px */
 @media (max-width: 767px) {
   .container {
     max-width: 576px;
     margin: 0 auto;
   }
+  /* changing first sections background-color */
   .section1 {
     background-color: #151515;
   }
   .footerUpper {
+    /* adjusting follow us bar for space around follow us and logos */
     justify-content: space-around;
     border-bottom: 2px solid white;
     padding: 45px 0;
@@ -241,22 +248,33 @@ footer {
     flex-direction: column;
   }
   .corporate {
+    /* width 100% to take full width of section2 and border 0px */
     width: 100%;
     border: 0px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-top: 0px;
   }
+  .corporate h2 {
+    margin-bottom: 20px;
+  }
   .subSection21 {
+    /* full width for qther information section */
     width: 100%;
   }
   .indiSection {
+    /* adjusting indiSection width to 50 % */
     width: calc(50% - 20px);
     padding-top: 0px;
+    margin-bottom: 30px;
+  }
+  .indiSection h2 {
     margin-bottom: 20px;
   }
   .lower {
+    /* changing the flex direction to column for lower div */
     flex-direction: column;
+    /* centring the content on both axis */
     justify-content: center;
     align-items: center;
     padding: 25px 0;
