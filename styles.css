@@ -283,3 +283,82 @@ footer {
     margin: 10px;
   }
 }
+
+/* screen size from 320 px to 575px */
+@media (max-width: 575px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  /* changing first sections background-color */
+  .section1 {
+    background-color: #151515;
+  }
+  .footerUpper {
+    /* adjusting follow us bar for space around follow us and logos */
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    padding: 45px 0;
+  }
+  .upper {
+    flex-direction: column;
+  }
+  .footerUpper > h4 {
+    /* Follow Us Styling */
+    color: white;
+    font-weight: 400;
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+  .allLogos {
+    /* a div containing all logos */
+    display: flex;
+    align-items: center;
+  }
+  .logos {
+    /* logo container styling */
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin: 0px 15px;
+  }
+  .corporate {
+    /* width 100% to take full width of section2 and border 0px */
+    width: 100%;
+    border: 0px;
+    height: auto;
+    margin-bottom: 30px;
+    padding-top: 0px;
+  }
+  .corporate h2 {
+    margin-bottom: 20px;
+  }
+  .subSection21 {
+    width: 100%;
+  }
+  .indiSection {
+    width: calc(50% - 20px);
+    padding-top: 0px;
+    margin-bottom: 30px;
+  }
+  .indiSection h2 {
+    margin-bottom: 20px;
+  }
+  .lower {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+  }
+  .lowerLeft > p {
+    color: #ffffff90;
+    font-size: 18px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  .lowerRight > p {
+    color: white;
+    font-size: 16px;
+  }
+}
